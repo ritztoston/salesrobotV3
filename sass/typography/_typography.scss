@@ -1,0 +1,22 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $color-gray-dark;
+}
+
+.heading-primary {
+  background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.paragraph {
+  color: $color-gray-dark;
+}
+
+.paragraph-white {
+  color: $color-white;
+  line-height: 2rem;
+}

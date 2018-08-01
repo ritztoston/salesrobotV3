@@ -1,0 +1,50 @@
+.u-title-big {font-size: 5rem;line-height: 5rem;}
+.u-title-medium {font-size: 4rem;line-height: 5rem;}
+
+.u-center-text {text-align: center;}
+
+.u-margin-bottom-small {margin-bottom: 1.5rem;}
+.u-margin-bottom-medium {margin-bottom: 4rem;}
+.u-margin-bottom-big {margin-bottom: 8rem;}
+
+.u-margin-top-big {margin-top: 8rem;}
+.u-margin-top-medium {margin-top: 4rem;}
+.u-margin-top-small {margin-top: 1.5rem;}
+
+.u-indent {margin: 1.5rem;}
+.u-border {border-radius: .5rem;}
+
+.u-white-text {color: $color-white;}
+
+.u-link-white-underline {
+  text-decoration: underline; 
+  color: $color-white;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.u-link-gray-underline {
+  text-decoration: underline;
+  color: $color-gray-dark;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.u-link-gray {
+  text-decoration: none;
+  color: $color-gray-dark;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.u-link-blue {
+  text-decoration: none;
+  color: $color-tertiary-light;
+  &:hover {
+    cursor: pointer;
+    color: $color-tertiary-dark;
+  }
+}

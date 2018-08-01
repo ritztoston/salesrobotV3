@@ -1,0 +1,17 @@
+{
+  "name": "salesrobotV3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:sass": "node-sass sass/main.scss css/style.css -w",
+    "dev:live-server": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}

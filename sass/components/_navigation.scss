@@ -1,0 +1,39 @@
+.navigation {
+  height: 20vh;
+  display: block;
+  position: relative;
+  @include clearFix;
+  //background-color: blue;
+
+  &__header--logo {
+    position: absolute;
+    width: 15rem;
+    left: 5%;
+  }
+  &__container {
+    position: absolute;
+    top: 35%;
+    right: 10rem;
+    display: inline-block;
+
+    &--items {
+      list-style: none;
+      float: left;
+
+      li {
+        display: inline-block;
+        margin-left:1rem;
+        &:first-child {
+          margin: 0;
+        }
+
+        a:link,
+        a:visited {
+          color: $color-gray-dark;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+

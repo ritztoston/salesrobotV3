@@ -1,0 +1,31 @@
+.section__products {
+  padding: 5% 0;
+  height: 100vh;
+}
+
+.section__archintel {
+  height: 100vh;
+  padding: 5rem;
+
+  &--container {
+    border-radius: 1rem;
+    height: 85vh;
+    background-image: linear-gradient(to right bottom, $color-tertiary-light2, $color-tertiary-dark);
+  }
+}
+
+.section__4x24 {
+  height: 100vh;
+  padding: 5rem;
+
+  &--container {
+    border-radius: 1rem;
+    height: 85vh;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+  }
+}
+
+
+.section__about {
+  height: 100vh;
+}

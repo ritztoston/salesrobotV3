@@ -1,0 +1,102 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    height: 50rem;
+    transition: all .5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 .5rem 3rem rgba($color-black, .15);
+
+    &--front {
+      background-color: $color-white;
+    }
+  }
+
+  &:hover &__side--front {
+    //transform: rotateY(-180deg);
+    transform: translateY(-1rem);
+    box-shadow: 0 1.5rem 10rem rgba($color-black, .15);
+  }
+
+  &:active &__side--front {
+    //transform: rotateY(-180deg);
+    transform: translateY(0);
+    box-shadow: 0 .5rem 3rem rgba($color-black, .15);
+  }
+
+  &__picture {
+    background-blend-mode: unset;
+    background-size: cover;
+    height: 23rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    &--1 {
+      //background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+      background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85)), url("../img/logo.png");
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85)), url("../img/4x24.png");
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right bottom, rgba($color-fourth-light, .85), rgba($color-fourth-dark, .85)), url("../img/poc-logo_poc-site.jpg");
+    }
+
+    &--4 {
+      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85)), url("../img/spectrum.png");
+    }
+  }
+
+  &__details {
+    font-size: 1.3rem;
+    padding: 1rem;
+    width: 80%;
+    margin: 5rem auto 0;
+  }
+
+  &__heading {
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    &--1 {
+      background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    }
+
+    &--3 {
+      background-image: linear-gradient(to right bottom, rgba($color-fourth-light, .85), rgba($color-fourth-dark, .85));
+    }
+
+    &--4 {
+      background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+    }
+  }
+}
