@@ -13,19 +13,33 @@
     &--p1 {
       left: 8rem;
       top: -10rem;
+      @include respond(tab-port) {
+        top: 0;
+        left: 0;
+      }
     }
     &--p2 {
       right: 8rem;
       top: -5rem;
+
+      @include respond(tab-port) {
+        top: 0;
+        right: 0;
+      }
     }
     &--p3 {
       left: 30%;
       top: 0;
+
+      @include respond(tab-port) {
+        z-index: 100;
+        transform: scale(1.1);
+      }
     }
 
     &:hover {
       outline: 1.5rem solid $color-tertiary-light2;
-      transform: scale(1.3) translateY(-.5rem);
+      transform: scale(1) translateY(-.5rem);
       z-index: 20;
       box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
     }

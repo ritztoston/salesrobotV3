@@ -1,21 +1,29 @@
 .feature {
-  position: relative;
 
   &__logo-box {
     position: absolute;
-    top: 3rem;
-    left: 4rem;
+    display: inline-block;
+    left: 5rem;
+
+    @include respond(phone) {
+      left: 1rem;
+    }
+  }
+
+  &__logo-box-right {
+    text-align: right;
+    right: 5rem;
+    position: absolute;
+    display: inline-block;
+
+    @include respond(phone) {
+      right: 1rem;
+    }
   }
 
   &__logo {
     height: 10rem;
     display: block;
-  }
-
-  a {
-    position: absolute;
-    top: 48rem;
-    left: 4rem;
   }
 
   ul {

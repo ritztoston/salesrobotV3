@@ -1,3 +1,26 @@
+.btn-simple {
+
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-tertiary-light;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 1.2rem;
+    transition: all .4s;
+  }
+
+  &:hover {
+    background-color: $color-white;
+    transform: translateY(-1.2px);
+    color: $color-tertiary-light;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
 .btn-text {
 
   &:link,
@@ -49,14 +72,14 @@
   }
 }
 
-.btn-text--green {
+.btn-text--transparent {
   &:link,
   &:visited {
     font-size: $default-font-size;
     color: $color-white;
     display: inline-block;
     text-decoration: none;
-    background-color: $color-primary-light2;
+    background-color: transparent;
     padding: 6px 1.5rem;
     transition: all .2s;
     border-radius: 1rem;
