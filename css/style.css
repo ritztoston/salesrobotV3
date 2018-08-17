@@ -77,17 +77,29 @@ body {
 .u-margin-top-small {
   margin-top: 1.5rem !important; }
 
+.u-margin-right-small {
+  margin-right: 1.5rem !important; }
+
+.u-margin-right-medium {
+  margin-right: 4rem !important; }
+
 .u-padding-top-huge {
   padding-top: 15rem !important; }
 
 .u-padding-top-big {
   padding-top: 8rem !important; }
+  @media (max-width: 37.5em) {
+    .u-padding-top-big {
+      padding-top: 4rem !important; } }
 
 .u-padding-right-small {
   padding-right: 3rem !important; }
 
 .u-padding-bottom-big {
   padding-bottom: 8rem !important; }
+  @media (max-width: 37.5em) {
+    .u-padding-bottom-big {
+      padding-bottom: 4rem !important; } }
 
 .u-indent {
   margin: 1.5rem !important; }
@@ -97,6 +109,9 @@ body {
 
 .u-white-text {
   color: #fff !important; }
+
+.u-fontsize-small {
+  font-size: 1.2rem !important; }
 
 .u-link-white-underline {
   text-decoration: underline !important;
@@ -122,6 +137,20 @@ body {
   .u-link-blue:hover {
     cursor: pointer !important;
     color: #5643fa !important; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .30;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .btn-simple:link, .btn-simple:visited {
   font-size: 1.6rem;
@@ -190,6 +219,24 @@ body {
   transform: translateY(-2px); }
 
 .btn-text--transparent:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
+.btn-text--transparent-blue:link, .btn-text--transparent-blue:visited {
+  font-size: 1.6rem;
+  color: #5643fa;
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 6px 1.5rem;
+  transition: all .2s;
+  border-radius: 1rem; }
+
+.btn-text--transparent-blue:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text--transparent-blue:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
@@ -402,8 +449,8 @@ body {
     .card__side--front {
       background-color: #fff; }
   .card:hover .card__side--front {
-    transform: translateY(-1rem);
-    box-shadow: 0 1.5rem 10rem rgba(0, 0, 0, 0.15); }
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.5); }
   .card:active .card__side--front {
     transform: translateY(0);
     box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.15); }
@@ -484,6 +531,12 @@ body {
 
 .composition {
   position: relative; }
+  @media (max-width: 56.25em) {
+    .composition {
+      padding-bottom: 55rem; } }
+  @media (max-width: 37.5em) {
+    .composition {
+      padding-bottom: 35rem; } }
   .composition__photo {
     width: 40%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -515,7 +568,7 @@ body {
           transform: scale(1.1); } }
     .composition__photo:hover {
       outline: 1.5rem solid #8faee0;
-      transform: scale(1) translateY(-0.5rem);
+      transform: scale(1.1) translateY(-0.5rem);
       z-index: 20;
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
   .composition:hover .composition__photo:not(:hover) {
@@ -608,10 +661,24 @@ body {
       .header__logo--img {
         max-width: 30rem; } }
 
-.section__products {
+.footer {
   background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #f7f7f7; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__menu-bar ul {
+    padding: 0;
+    margin: 0; }
+    .footer__menu-bar ul li {
+      list-style: none; }
+
+.section__products {
   padding: 5rem 0 10rem 0;
-  height: auto; }
+  height: auto;
+  position: relative; }
 
 .section__archintel {
   position: relative; }
@@ -622,8 +689,11 @@ body {
 
 .section__4x24 {
   position: relative;
-  background-image: linear-gradient(to right bottom, #F9DC5C, #28b485); }
+  background-image: linear-gradient(to right bottom, #fff, #28b485); }
   .section__4x24--container {
     padding: 5rem;
     border-radius: 1rem;
     height: 85vh; }
+  @media (max-width: 56.25em) {
+    .section__4x24 {
+      padding-bottom: 60rem; } }

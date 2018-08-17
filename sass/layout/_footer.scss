@@ -1,0 +1,22 @@
+.footer {
+  background-color: $color-gray-dark-2;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: $color-grey-light-1;
+  
+  &__logo {
+    width: 15rem;
+    height: auto;
+  }
+
+  &__menu-bar {
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+}

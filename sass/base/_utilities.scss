@@ -15,17 +15,31 @@
 .u-margin-top-medium {margin-top: 4rem !important;}
 .u-margin-top-small {margin-top: 1.5rem !important;}
 
+.u-margin-right-small {margin-right: 1.5rem !important;}
+.u-margin-right-medium {margin-right: 4rem !important;}
+
 .u-padding-top-huge {padding-top: 15rem !important;}
-.u-padding-top-big {padding-top: 8rem !important;}
+.u-padding-top-big {
+  padding-top: 8rem !important;
+  @include respond(phone) {
+    padding-top: 4rem !important;
+  }
+}
 
 .u-padding-right-small {padding-right: 3rem !important;}
 
-.u-padding-bottom-big {padding-bottom: 8rem !important;}
+.u-padding-bottom-big {padding-bottom: 8rem !important;
+  @include respond(phone) {
+    padding-bottom: 4rem !important;
+  }
+}
 
 .u-indent {margin: 1.5rem !important;}
 .u-border {border-radius: .5rem !important;}
 
 .u-white-text {color: $color-white !important;}
+
+.u-fontsize-small {font-size: 1.2rem !important;};
 
 .u-link-white-underline {
   text-decoration: underline !important;

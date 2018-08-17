@@ -25,8 +25,8 @@
 
   &:hover &__side--front {
     //transform: rotateY(-180deg);
-    transform: translateY(-1rem);
-    box-shadow: 0 1.5rem 10rem rgba($color-black, .15);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 5rem rgba($color-black, .50);
   }
 
   &:active &__side--front {
