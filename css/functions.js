@@ -46,11 +46,29 @@
     scale: 0.3,
     delay: 500
   }, 200);
+  sr.reveal('.sr-comp-3', {
+    duration: 1000,
+    scale: 0.3,
+    delay: 500
+  }, 200);
+  sr.reveal('.sr-comp-4', {
+    duration: 1000,
+    scale: 0.3,
+    delay: 500
+  }, 200);
   sr.reveal('.sr__archintel', {
     duration: 2000,
     origin: 'left'
   }, 200);
   sr.reveal('.sr__4x24', {
+    duration: 2000,
+    origin: 'right'
+  }, 200);
+  sr.reveal('.sr__poc', {
+    duration: 2000,
+    origin: 'left'
+  }, 200);
+  sr.reveal('.sr__spectrum', {
     duration: 2000,
     origin: 'right'
   }, 200);

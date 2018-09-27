@@ -95,8 +95,14 @@ body {
 .u-padding-right-small {
   padding-right: 3rem !important; }
 
+.u-padding-bottom-extra-big {
+  padding-bottom: 12rem !important; }
+  @media (max-width: 37.5em) {
+    .u-padding-bottom-extra-big {
+      padding-bottom: 2rem !important; } }
+
 .u-padding-bottom-big {
-  padding-bottom: 10rem !important; }
+  padding-bottom: 8rem !important; }
   @media (max-width: 37.5em) {
     .u-padding-bottom-big {
       padding-bottom: 2rem !important; } }
@@ -467,7 +473,7 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)), url("../img/logo.png"); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, rgba(249, 220, 92, 0.85), rgba(40, 180, 133, 0.85)), url("../img/4x24.png"); }
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.55), rgba(40, 180, 133, 0.85)), url("../img/4x24.png"); }
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, rgba(232, 72, 85, 0.85), rgba(186, 154, 63, 0.85)), url("../img/poc-logo_poc-site.jpg"); }
     .card__picture--4 {
@@ -494,7 +500,7 @@ body {
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, #F9DC5C, #28b485); }
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.55), #28b485); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(232, 72, 85, 0.85), rgba(186, 154, 63, 0.85)); }
     .card__heading-span--4 {
@@ -700,11 +706,22 @@ body {
 
 .section__4x24 {
   position: relative;
-  background-image: linear-gradient(to right bottom, #fff, #28b485); }
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.55), #28b485); }
   .section__4x24--container {
     padding: 5rem;
     border-radius: 1rem;
     height: 85vh; }
   @media (max-width: 56.25em) {
     .section__4x24 {
+      padding-bottom: 60rem; } }
+
+.section__spectrum {
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(64, 63, 76, 0.85), rgba(255, 119, 48, 0.85)); }
+  .section__spectrum--container {
+    padding: 5rem;
+    border-radius: 1rem;
+    height: 85vh; }
+  @media (max-width: 56.25em) {
+    .section__spectrum {
       padding-bottom: 60rem; } }
