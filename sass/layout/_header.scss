@@ -7,6 +7,16 @@
     height: auto;
   }
 
+  @include respond(tab-land-sm) {
+    padding-bottom: 8rem;
+    height: auto;
+  }
+
+  @include respond(phone) {
+    padding-bottom: 6rem;
+    height: auto;
+  }
+
   &__logo {
     &--img{
       max-width: 40rem;

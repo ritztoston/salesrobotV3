@@ -96,10 +96,10 @@ body {
   padding-right: 3rem !important; }
 
 .u-padding-bottom-big {
-  padding-bottom: 8rem !important; }
+  padding-bottom: 10rem !important; }
   @media (max-width: 37.5em) {
     .u-padding-bottom-big {
-      padding-bottom: 4rem !important; } }
+      padding-bottom: 2rem !important; } }
 
 .u-indent {
   margin: 1.5rem !important; }
@@ -383,6 +383,9 @@ body {
     font-size: 2rem;
     margin: auto;
     transition: height .5s ease; }
+    @media (max-width: 20em) {
+      .burger__navigation__list {
+        margin-top: 3rem; } }
   .burger__navigation__item {
     text-align: center;
     height: 0;
@@ -654,6 +657,14 @@ body {
   height: 100vh; }
   @media (max-width: 56.25em) {
     .header {
+      height: auto; } }
+  @media (max-width: 64em) {
+    .header {
+      padding-bottom: 8rem;
+      height: auto; } }
+  @media (max-width: 37.5em) {
+    .header {
+      padding-bottom: 6rem;
       height: auto; } }
   .header__logo--img {
     max-width: 40rem; }

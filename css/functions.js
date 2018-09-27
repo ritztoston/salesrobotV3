@@ -36,7 +36,12 @@
   });
 
   window.sr = ScrollReveal({reset: false});
-  sr.reveal('.composition', {
+  sr.reveal('.sr-comp-1', {
+    duration: 1000,
+    scale: 0.3,
+    delay: 500
+  }, 200);
+  sr.reveal('.sr-comp-2', {
     duration: 1000,
     scale: 0.3,
     delay: 500

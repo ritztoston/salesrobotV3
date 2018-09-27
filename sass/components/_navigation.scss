@@ -144,9 +144,12 @@
     list-style: none;
     text-align: center;
     font-size: 2rem;
-
     margin: auto;
     transition: height .5s ease;
+
+    @include respond(phone-xs) {
+      margin-top: 3rem;
+    }
   }
 
   &__item {

@@ -238,7 +238,7 @@
 
     <div class="row u-padding-top-huge u-padding-bottom-big">
       <div class="col-1-of-2">
-        <div class="composition sr-comp-2">
+        <div class="composition u-margin-right-medium sr-comp-2">
           <img src="img/temp1 (1).png" alt="Photo 1" class="composition__photo composition__photo--p1">
           <img src="img/temp1 (2).png" alt="Photo 2" class="composition__photo composition__photo--p2">
           <img src="img/temp1.png" alt="Photo 3" class="composition__photo composition__photo--p3">
