@@ -1,6 +1,7 @@
 .u-title-big {font-size: 5rem !important;line-height: 5rem !important;}
 .u-title-medium {font-size: 4rem !important;line-height: 5rem !important;}
 .u-title-small {font-size: 3.5rem !important;line-height: 5rem !important;}
+.u-title-xsmall {font-size: 2rem !important;line-height: 3rem !important;}
 
 .u-sub-title-small {font-size: 1.7rem !important;line-height: 5rem !important;}
 
@@ -36,3 +37,6 @@
 .u-link-gray-underline {text-decoration: underline !important;color: $color-gray-dark !important; &:hover {cursor: pointer !important;}}
 .u-link-gray {text-decoration: none !important;color: $color-gray-dark !important; &:hover {cursor: pointer !important;}}
 .u-link-blue {text-decoration: none !important;color: $color-tertiary-light !important; &:hover {cursor: pointer !important;color: $color-tertiary-dark !important;}}
+
+.u-display-inline-block {display: inline-block !important;}
+.u-position-relative {position: relative !important;}

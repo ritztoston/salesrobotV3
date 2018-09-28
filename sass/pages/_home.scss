@@ -1,5 +1,6 @@
 .section__products {
   //background-color: $color-gray-dark-2;
+  background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .7), rgba($color-primary-dark, .3));
   padding: 5rem 0 10rem 0;
   height: auto;
   position: relative;
@@ -50,6 +51,10 @@
   }
 }
 
-//.section__about {
-//
-//}
+.section__about {
+  padding: 8rem 15rem;
+
+  @include respond(phone) {
+    padding: 8rem 1rem;
+  }
+}
